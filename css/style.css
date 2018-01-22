@@ -191,7 +191,6 @@ header {
 .about-wrap-content {
 	display: flex;
 	align-items: flex-start;
-	margin-right: 60px;
 	flex: 1;
 }
 .about-wrap-content__icon {
@@ -227,6 +226,7 @@ header {
 
 .about-wrap-img {
 	position: relative;
+	margin-left: 60px;
 }
 
 .about-wrap-img__icon {
@@ -239,4 +239,112 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+/* box-skills */
+
+.box-skills {
+	display: flex;
+	margin-top: 120px;
+}
+.box-skills__item {
+	flex: 1;
+	width: 50%;
+}
+.box-skills__item--img img {
+	display: inline-block;
+	max-width: 100%;
+}
+.box-skills__item--img {
+	padding-right: 50px;
+	text-align: right;
+}
+.box-skills__item--content {
+	padding-left: 40px;
+}
+
+
+/* bars */
+
+.box-bars {margin-top: 60px;}
+.bars {margin-bottom: 35px;}
+.bars__title {
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: #0d0d0d;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.bars__title span{
+	color: #bfbfbf;
+	font-weight: 600;
+}
+.bars__title .procent {
+	color: #0d0d0d;
+	font-weight: 300;
+}
+
+.bars-line {
+	height: 10px;
+	background: #e7e7e7;
+}
+.bars-line > div {
+	height: 10px;
+	background: #f49d09;
+}
+
+
+/* quote */
+
+.box-quote {
+	padding: 250px 0;
+	text-align: center;
+	color: #fff;
+	background: url("../img/quote-bg.png") no-repeat center top;
+	background-size: cover;
+
+}
+
+
+.quote__text {
+	color: #ffffff;
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 60px;
+	position: relative;
+	padding: 0 70px;
+	margin-bottom: 33px;
+}
+.quote__text:after, .quote__text:before {
+	content: '"';
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 110px;
+	font-weight: 700;
+	line-height: 60px;
+	position: absolute;
+	top: 0;
+}
+.quote__text:before {
+	left: 0;
+
+}
+.quote__text:after {
+	right: 0;
+}
+.quote__author {
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+} 
+.quote__author:before {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 4px;
+	margin: 0 auto 20px;
+	background-color: #f39c12;
 }
