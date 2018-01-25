@@ -49,7 +49,7 @@ h6 {
 }
 
 
-/* buttons */
+/* buttons ==========================================*/
 
 .btn {
 	display: inline-block;
@@ -141,16 +141,35 @@ header {
 	color: #0d0d0d;
 }
 
-/* banner */
+/* banner ==========================================*/
 
 .banner {
-	padding-top: 450px;
-	padding-bottom: 280px;
-	height: 1100px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 70px;
+	height: calc(100vh + 100px);
+	overflow: hidden;
 	text-align: center;
 	background: url("../img/banner.png") no-repeat center top;
+	background-size: cover;
 }
 
+.banner:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid #fff;
+	border-left: 100vw solid transparent;
+}
+
+
+/* Heading ==========================================*/
 .heading {
 	display: flex;
 	-ms-align-items: center;
@@ -190,7 +209,7 @@ header {
 	text-transform: uppercase;
 }
 
-
+/* About ==========================================*/
 .about-wrap {
 	display: flex;
 	align-items: flex-start;
@@ -249,7 +268,7 @@ header {
 }
 
 
-/* box-skills */
+/* box-skills ==========================================*/
 
 .box-skills {
 	display: flex;
@@ -271,7 +290,7 @@ header {
 }
 
 
-/* bars */
+/* bars ==========================================*/
 
 .box-bars {margin-top: 60px;}
 .bars {margin-bottom: 35px;}
@@ -315,7 +334,7 @@ header {
 }
 
 
-/* quote */
+/* quote ==========================================*/
 .quote {
 	text-align: center;
 	color: #fff;
@@ -363,7 +382,7 @@ header {
 }
 
 
-/* team */
+/* team ==========================================*/
 
 
 .team-list {
@@ -373,6 +392,8 @@ header {
 }
 
 .team-list__item {
+	display: flex;
+	flex-direction: column;
 	width: 269px;
 	padding: 25px 15px 30px;
 	text-align: center;
@@ -386,8 +407,17 @@ header {
 	background-color: #e74c3c;
 }
 
+.team-list__item .social {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	flex: 1;
+	height: 100%;
+}
+
 .team-list__img {
 	display: flex;
+	flex: none;
 	align-items: center;
 	justify-content: center;
 	font-size: 62px;
@@ -399,6 +429,8 @@ header {
 	position: relative;
 	margin: 0 auto 25px;
 }
+
+
 .team-list__img:after {
 	content: "";
 	display: block;
@@ -454,7 +486,7 @@ header {
 }
 
 
-
+/* Facts ==========================================*/
 .facts-list {
 	display: flex;
 	justify-content: space-between;
@@ -497,7 +529,7 @@ header {
 	display: block;
 }
 
-/* service */
+/* service ==========================================*/
 .service-list {
 	display: flex;
 	text-align: center;
@@ -539,7 +571,7 @@ header {
 	line-height: 28px;
 }
 
-
+/* Pricing ==========================================*/
 .box-pricing {
 	display: flex;
 }
@@ -635,7 +667,7 @@ header {
 	padding: 9px 33px 0;
 }
 
-/* testimonial */
+/* testimonial ==========================================*/
 
 .testimonial {
 	text-align: center;
@@ -727,6 +759,8 @@ header {
 	opacity: 0;
 }
 
+
+/* Portfolio ==========================================*/
 .portfolio-list{
 	display: flex;
 	flex-wrap: wrap;
@@ -809,14 +843,13 @@ header {
 	border-radius: 50%;
 	display: none;
 	z-index: 3;
-
 }
 
 .portfolio-list__preview:hover {
 	background-color: rgba(243, 156, 18, 0.8)
 }
 
-/* tweet */
+/* tweet ==========================================*/
 .tweet {
 	text-align: center;
 	color: #fff;
@@ -834,7 +867,6 @@ header {
 }
 .tweet-wrap__icon img {
 	display: block;
-
 }
 .tweet-wrap__text {
 	margin: 35px 0 6px;
@@ -842,12 +874,12 @@ header {
 	font-size: 22px;
 	font-weight: 700;
 	line-height: 33px;
-	
-
 }
+
 .tweet-wrap__text a {
 	color: #f39c12;
 }
+
 .tweet-wrap__text a:hover {
 	text-decoration: underline;
 }
@@ -860,7 +892,7 @@ header {
 }
 
 
-/* blog */
+/* blog ==========================================*/
 
 .blog-list {
 	display: flex;
